@@ -1,0 +1,8 @@
+<div class="release">
+<span>Release {{ release.version }}:</span>
+{% for file in release.releasefile_set.all %}
+    <a href="{{ file.download_url }}">{{ file.file_type }}</a>
+{% empty %}
+    No files.
+{% endfor %}
+</div>

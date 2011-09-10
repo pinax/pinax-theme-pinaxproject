@@ -1,0 +1,23 @@
+{% extends "site_base.html" %}
+
+{% load webdesign %}
+
+{% block head_title %}Quotes{% endblock %}
+{% block body_id %}quotes{% endblock %}
+
+{% block main_content %}
+
+    <h2>Quotes about Pinax</h2>
+    <hr />
+
+    {% for quote in quotes %}
+        <div class="quote">
+            <span class="marks">&ldquo;</span>{{ quote.text }}<span class="marks">&rdquo;</span>
+            <br />
+            <span class="attribution">&mdash; {{ quote.author }}</span>
+        </div>
+    {% empty %}
+        <p>No quotes.</p>
+    {% endfor %}
+
+{% endblock %}

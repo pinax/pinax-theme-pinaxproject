@@ -1,0 +1,31 @@
+/* GENERAL TAB STYLING */
+
+div#nav {
+    position: absolute;
+    right: 15px;
+    bottom: -1px; /* must be same thickness as tab border */
+}
+
+div#nav ul li {
+    list-style-type: none;
+    display: inline;
+    background-color: #DDD; /* unselected tab colour */
+    padding: 5px 0 4px;
+    margin: 0 1px; /* to compensate for border */
+}
+
+div#nav li a, div#nav li a:visited {
+    color: #444; /* unselected tab text colour */
+    font-weight: bold;
+    text-decoration: none;
+}
+div#nav ul li a:hover {
+    color: #666; /* unselected tab text hover colour */
+}
+
+div#nav ul li a {
+    padding: 5px 12px;
+}
+div#nav ul {
+    margin: 0 0 5px;
+}
